@@ -5,7 +5,6 @@ import "./SafeMath.sol";
 contract fabowlToken {
     using SafeMath for uint;
 
-    // Variables
     string public name = "FabioArcanjoToken";
     string public symbol = "FABOWL";
     uint256 public decimals = 10;
@@ -14,7 +13,6 @@ contract fabowlToken {
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
 
-    // Events
     event Transfer(address indexed from, address indexed to, uint256 value);
     event Approval(address indexed owner, address indexed spender, uint256 value);
 
